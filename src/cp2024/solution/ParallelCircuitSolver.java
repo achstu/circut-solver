@@ -85,16 +85,11 @@ public class ParallelCircuitSolver implements CircuitSolver {
         }
 
         public Optional<Boolean> evaluate() throws InterruptedException {
-//            return Optional.ofNullable(switch (node) {
-//                case LeafNode leafNode -> leafNode.getValue();
-//                case SimpleNode simpleNode -> evaluateSimpleNode(simpleNode);
-//                case ThresholdNode thresholdNode -> evaluateThresholdNode(thresholdNode);
-//            });
-            if (node instanceof LeafNode leafNode) return Optional.of(leafNode.getValue());
-            else if (node instanceof SimpleNode simpleNode) return Optional.ofNullable(evaluateSimpleNode(simpleNode));
-            else if (node instanceof ThresholdNode thresholdNode)
-                return Optional.ofNullable(evaluateThresholdNode(thresholdNode));
-            else return Optional.empty();
+           return Optional.ofNullable(switch (node) {
+               case LeafNode leafNode -> leafNode.getValue();
+               case SimpleNode simpleNode -> evaluateSimpleNode(simpleNode);
+               case ThresholdNode thresholdNode -> evaluateThresholdNode(thresholdNode);
+           });
         }
     }
 
@@ -128,6 +123,9 @@ public class ParallelCircuitSolver implements CircuitSolver {
                 if (node.getType() == NodeType.IF) {
                     boolean condition = futures.get(0).get();
                     int activeBranch = condition ? 1 : 2;
+
+                    // TODO if 'then' and 'else' branches evaluates the same
+                    // 'condition' should be canceled instead
 
                     return futures.get(activeBranch).get();
                 }
