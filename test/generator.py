@@ -7,7 +7,7 @@ terminals = {"true1", "false1"}
 non_terminals = {"or", "and", "gt", "lt", "if"}
 
 
-def randexpr(depth=MAX_DEPTH):
+def randexpr(depth=0):
 
     def form(symbol, n=None, x=None):
         return (
