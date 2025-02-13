@@ -1,6 +1,6 @@
-package cp2024.solution;
+package solution;
 
-import cp2024.circuit.*;
+import circuit.*;
 
 import java.util.ArrayList;
 import java.util.List;

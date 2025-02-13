@@ -1,4 +1,4 @@
-package cp2024.circuit;
+package circuit;
 
 public final class ThresholdNode extends CircuitNode {
     private final int threshold;

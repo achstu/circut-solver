@@ -1,4 +1,4 @@
-package cp2024.circuit;
+package circuit;
 
 public class Circuit {
     private final CircuitNode root;

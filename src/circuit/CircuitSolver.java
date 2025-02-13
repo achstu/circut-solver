@@ -1,4 +1,4 @@
-package cp2024.circuit;
+package circuit;
 
 public interface CircuitSolver {
     public CircuitValue solve(Circuit c);

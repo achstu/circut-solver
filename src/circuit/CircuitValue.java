@@ -1,4 +1,4 @@
-package cp2024.circuit;
+package circuit;
 
 /** Interface for a deferred (future) value returned by a CircuitSolver. */
 public interface CircuitValue {

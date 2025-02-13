@@ -1,4 +1,4 @@
-package cp2024.circuit;
+package circuit;
 
 import java.time.Duration;
 

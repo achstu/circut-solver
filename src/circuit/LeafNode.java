@@ -1,4 +1,4 @@
-package cp2024.circuit;
+package circuit;
 
 public abstract non-sealed class LeafNode extends CircuitNode {
     protected LeafNode() {

@@ -1,6 +1,6 @@
-package cp2024.demo;
+package demo;
 
-import cp2024.circuit.*;
+import circuit.*;
 
 public class SequentialSolver implements CircuitSolver {
     private Boolean acceptComputations = true;

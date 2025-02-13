@@ -1,4 +1,4 @@
-package cp2024.circuit;
+package circuit;
 
 /** A circuit node of type NOT, AND, OR, or IF. */
 public final class SimpleNode extends CircuitNode {

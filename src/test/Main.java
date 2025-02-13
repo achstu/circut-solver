@@ -1,8 +1,8 @@
-package cp2024.test;
+package test;
 
-import cp2024.circuit.*;
-import cp2024.solution.*;
-import cp2024.parser.*;
+import circuit.*;
+import solution.*;
+import parser.*;
 
 import java.time.Instant;
 import java.time.Duration;

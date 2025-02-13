@@ -1,6 +1,6 @@
-package cp2024.demo;
+package demo;
 
-import cp2024.circuit.CircuitValue;
+import circuit.CircuitValue;
 
 public class BrokenCircuitValue implements CircuitValue {
     @Override

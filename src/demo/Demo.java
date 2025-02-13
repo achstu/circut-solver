@@ -1,8 +1,8 @@
-package cp2024.demo;
+package demo;
 
-import cp2024.circuit.*;
-import cp2024.parser.Parser;
-// import cp2024.mp249046.ParallelCircuitSolver;
+import circuit.*;
+import parser.Parser;
+// import solution.ParallelCircuitSolver;
 import java.io.File;
 import java.time.Duration;
 import java.util.Scanner;

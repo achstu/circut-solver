@@ -1,4 +1,4 @@
-package cp2024.circuit;
+package circuit;
 
 public enum NodeType {
     LEAF, GT, LT, AND, OR, NOT, IF

@@ -1,8 +1,8 @@
-package cp2024.parser;
+package parser;
 
-import cp2024.circuit.Circuit;
-import cp2024.circuit.CircuitNode;
-import cp2024.circuit.NodeType;
+import circuit.Circuit;
+import circuit.CircuitNode;
+import circuit.NodeType;
 
 import java.time.Duration;
 import java.util.ArrayList;
