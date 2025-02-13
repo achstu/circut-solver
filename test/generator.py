@@ -9,7 +9,7 @@ non_terminals = {"or", "and", "gt", "lt", "if"}
 
 def randexpr(depth=0):
 
-    def form(symbol, n=None, x=None):
+    def format(symbol, n=None, x=None):
         return (
             symbol
             + (str(x) if x is not None else "")
@@ -27,13 +27,13 @@ def randexpr(depth=0):
             return symbol
         case "or" | "and":
             n = random.randint(2, MAX_WIDTH)
-            return form(symbol, n)
+            return format(symbol, n)
         case "if":
-            return form(symbol, 3)
+            return format(symbol, 3)
         case "lt" | "gt":
             n = random.randint(2, MAX_WIDTH)
             x = random.randint(0, MAX_WIDTH)
-            return form(symbol, n, x)
+            return format(symbol, n, x)
 
 
 print(randexpr())
